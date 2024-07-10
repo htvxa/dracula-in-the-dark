@@ -1,0 +1,21 @@
+{
+  "name": "dracula-in-the-dark",
+  "displayName": "Dracula In The Dark",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dracula In The Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/DraculaITD.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "Import React ": {
+    "prefix": "imr",
+    "body": ["import React from 'react';", ""]
+  },
+  "Import React Router": {
+    "prefix": "imrr",
+    "body": [
+      "import { BrowserRouter as Router, Route, NavLink, Link } from 'react-router-dom'",
+      ""
+    ]
+  },
+  "React Arrow Function Export Component": {
+    "prefix": "_rafce",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system"
+  },
+  "React Arrow Function Component": {
+    "prefix": "_rafc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system"
+  },
+  "React Arrow Function Component With Prop Types": {
+    "prefix": "_rafcp",
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = props => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "",
+      "${1:${TM_FILENAME_BASE}}.propTypes = {",
+      "",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system with PropTypes"
+  },
+  "React Function Memo Component": {
+    "prefix": "_rmc",
+    "body": [
+      "import React, { memo } from 'react'",
+      "",
+      "export default memo(function ${1:${TM_FILENAME_BASE}}() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "})",
+      ""
+    ],
+    "description": "Creates a React Memo Function Component with ES7 module system"
+  },
+  "Redux Selector": {
+    "prefix": "rxselect",
+    "body": [
+      "import { createSelector } from 'reselect'",
+      "",
+      "export const ${1:selectorName} = state => state.${2:selector}",
+      ""
+    ]
+  },
+  "Redux Slice": {
+    "prefix": "rxslice",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit'",
+      "",
+      "const initialState = {",
+      "",
+      "}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = createSlice({",
+      "\tname: ${2:sliceName},",
+      "\tinitialState,",
+      "\treducers: {",
+      "\t",
+      "\t}",
+      "});",
+      "",
+      "export const {",
+      "",
+      "} = ${1:${TM_FILENAME_BASE}}.actions",
+      "export default ${1:${TM_FILENAME_BASE}}.reducer"
+    ]
+  },
+  "Comment Big Block": {
+    "prefix": "cmmb",
+    "body": ["/**", " * ${0}", " */"]
+  },
+  "Describe Block": {
+    "prefix": "desc",
+    "body": ["describe('$1', () => {", "\t$0", "})", ""],
+    "description": "Testing `describe` block"
+  },
+  "Test Block": {
+    "prefix": "test",
+    "body": ["test('should $1', () => {", "\t$0", "})", ""],
+    "description": "Testing `test` block"
+  },
+  "Test Async Block": {
+    "prefix": "testa",
+    "body": ["test('should $1', async () => {", "\t$0", "})", ""],
+    "description": "Testing `asynchronous test` block"
+  },
+  "it Block": {
+    "prefix": "tit",
+    "body": ["it('should $1', () => {", "\t$0", "})", ""],
+    "description": "Testing `it` block"
+  },
+  "it Async Block": {
+    "prefix": "tita",
+    "body": ["it('should $1', async () => {", "\t$0", "})", ""],
+    "description": "Testing asynchronous `it` block"
+  },
+  "useState syntax": {
+    "prefix": "_state",
+    "body": [
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialState})"
+    ]
+  },
+  "useEffect syntax": {
+    "prefix": "_effect",
+    "body": ["useEffect(() => {", "\t${1:effect}", "}, [${3:input}])"]
+  },
+  "useContext syntax": {
+    "prefix": "_context",
+    "body": ["const ${1:context} = useContext(${2:contextValue})"]
+  },
+  "useReducer syntax": {
+    "prefix": "_reducer",
+    "body": [
+      "const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}, ${3:init})"
+    ]
+  },
+  "useCallback syntax": {
+    "prefix": "_callback",
+    "body": [
+      "useCallback(",
+      "\t() => {",
+      "\t\t${1:callback}",
+      "\t},",
+      "\t[${2:input}],",
+      ")"
+    ]
+  },
+  "useMemo syntax": {
+    "prefix": "_memo",
+    "body": ["useMemo(() => ${1:function}, ${2:input})"]
+  },
+  "useRef syntax": {
+    "prefix": "_ref",
+    "body": ["const ${1:ref} = useRef(${2:initialValue})"]
+  },
+  "useImperativeHandle syntax": {
+    "prefix": "_imperativeHandle",
+    "body": [
+      "useImperativeHandle(",
+      "\t${1:ref},",
+      "\t() => {",
+      "\t\t${2:handler}",
+      "\t},",
+      "\t[${3:input}],",
+      ")"
+    ]
+  },
+  "useDebugValue syntax": {
+    "prefix": "_debugValue",
+    "body": ["useDebugValue(${1:value})"]
+  },
+  "useLayoutEffect syntax": {
+    "prefix": "_layoutEffect",
+    "body": ["useLayoutEffect(() => {", "\t${1:effect}", "}, [${2:input}])"]
+  },
+  "useSelector syntax": {
+    "prefix": "_selector",
+    "body": ["const ${1:state} = useSelector(state => state.${1:state})"]
+  },
+  "useDispatch syntax": {
+    "prefix": "_dispatch",
+    "body": ["const dispatch = useDispatch()"]
+  },
+  "Typescript React Functional Component": {
+    "prefix": "trafc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${1:App} = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t${2:}",
+      "\t\t</>",
+      "\t);",
+      "};",
+      "",
+      "export default ${1:App};"
+    ],
+    "description": "Create a stateless Typescript React Functional Component"
+  },
+  "Typescript React Functional Component with props and interface": {
+    "prefix": "trafci",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface I${1:App}Props {",
+      "\t${2:}: ${3:};",
+      "}",
+      "",
+      "const ${1:App} = ({ ${2:}}:React.PropsWithChildren<I${1:App}Props> ): React.FunctionComponentElement<I${1:App}Props> => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t${4:}",
+      "\t\t</>",
+      "\t);",
+      "};",
+      "",
+      "export default ${1:App};"
+    ],
+    "description": "Create a Typescript React Functional Component with props and interface"
+  },
+  "Styled Component": {
+    "prefix": "stc",
+    "body": [
+      "import styled from \"styled-components\"",
+      "const ${1:${TM_FILENAME_BASE}} = styled.${2:div}`",
+      "\t${0}",
+      "`",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Styled Component boilerplate"
+  },
+  "Styled Component Prop": {
+    "prefix": "stp",
+    "body": ["\\${(props) => props.${1}}"],
+    "description": "Use a prop in a styled component"
+  },
+  "Responsive Import": {
+    "prefix": "rimp",
+    "body": ["@import 'assets/styles/mixin/responsive.scss';"],
+    "description": "Use a prop in a styled component"
+  },
+  "Responsive Include": {
+    "prefix": "rinc",
+    "body": ["@include responsive-mobile {${1}}"],
+    "description": "Use a prop in a styled component"
+  },
+  "Responsive Include 13 inch": {
+    "prefix": "rinc13",
+    "body": ["@include responsive-13inch {${1}}"],
+    "description": "Use a prop in a styled component"
+  }
+}

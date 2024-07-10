@@ -1,0 +1,151 @@
+{
+  "Arrow Function": {
+    "prefix": "_af",
+    "body": ["($1) => {", "  $2", "}"],
+    "description": "Create a simple arrow function"
+  },
+  "Arrow Named Function": {
+    "prefix": "_anf",
+    "body": ["const ${1:name} = (${2:params}) => {", "\t${3}", "}", ""],
+    "description": "Creates a named function in ES7 syntax"
+  },
+  "Import": {
+    "prefix": "imp",
+    "body": "import ${2:moduleName} from '${1:module}'$0"
+  },
+  "Import prop-types": {
+    "prefix": "impt",
+    "body": "import * as PropTypes from 'prop-types'"
+  },
+  "Import Everything": {
+    "prefix": "ime",
+    "body": "import * as ${2:alias} from '${1:module}'$0"
+  },
+  "Import As": {
+    "prefix": "ima",
+    "body": "import { ${2:originalName} as ${3:alias} } from '${1:module}'$0"
+  },
+  "Export Default": {
+    "prefix": "exp",
+    "body": "export default $1$0"
+  },
+  "Export Const": {
+    "prefix": "expc",
+    "body": "export const $1$0"
+  },
+  "Export Named Function": {
+    "prefix": "efaf",
+    "body": [
+      "export const ${1:functionName} = (${2:params}) => {",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Export named function in ES7 syntax"
+  },
+  "Export Default Named Function": {
+    "prefix": "edf",
+    "body": [
+      "export default function ${1:functionName}(${2:params}) {",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Export default named function in ES7 syntax"
+  },
+  "Destructing Object": {
+    "prefix": "dob",
+    "body": "const {${2:propertyName}} = ${1:objectToDestruct}",
+    "description": "Creates and assigns a local variable using object destructing"
+  },
+  "Destructing Array": {
+    "prefix": "dar",
+    "body": "const [${2:propertyName}] = ${1:arrayToDestruct}",
+    "description": "Creates and assigns a local variable using array destructing"
+  },
+  "setInterval": {
+    "prefix": "sti",
+    "body": ["setInterval(() => {", "\t${2}", "}, ${0:intervalInms})", ""],
+    "description": "Executes the given function at specified intervals in ES7 syntax"
+  },
+  "setTimeOut": {
+    "prefix": "sto",
+    "body": ["setTimeout(() => {", "\t${2}", "}, ${1:delayInms})", ""],
+    "description": "Executes the given function after the specified delay in ES7 syntax"
+  },
+  "Promise": {
+    "prefix": "prom",
+    "body": ["return new Promise((resolve, reject) => {", "\t${1}", "})", ""],
+    "description": "Creates and returns a new Promise in the standard ES7 syntax"
+  },
+  "Console Clear": {
+    "prefix": "ccl",
+    "body": "console.clear()",
+    "description": "Clears the console"
+  },
+  "Console Count": {
+    "prefix": "cco",
+    "body": "console.count(${1:label})",
+    "description": "Writes the the number of times that count() has been invoked at the same line and with the same label"
+  },
+  "Console Dir": {
+    "prefix": "cdi",
+    "body": "console.dir(${1:object})",
+    "description": "Prints a JavaScript representation of the specified object"
+  },
+  "Console Error": {
+    "prefix": "cer",
+    "body": "console.error(${1:object})",
+    "description": "Displays a message in the console and also includes a stack trace from where the method was called"
+  },
+  "Console Group": {
+    "prefix": "cgr",
+    "body": "console.group(\"${1:label}\")",
+    "description": "Groups and indents all following output by an additional level, until console.groupEnd() is called."
+  },
+  "Console Group End": {
+    "prefix": "cge",
+    "body": "console.groupEnd()",
+    "description": "Closes out the corresponding console.group()."
+  },
+  "Console Log": {
+    "prefix": "clg",
+    "body": "console.log(${1:object})",
+    "description": "Displays a message in the console"
+  },
+  "Console Trace": {
+    "prefix": "ctr",
+    "body": "console.trace(${1:object})",
+    "description": "Prints a stack trace from the point where the method was called"
+  },
+  "Console Log Object": {
+    "prefix": "clo",
+    "body": "console.log(`${1:object}: `, ${1:object})",
+    "description": "Logs property with name."
+  },
+  "Console Log Json": {
+    "prefix": "clj",
+    "body": "console.log(`${1:object}`, JSON.stringify(${1:object}, null, 2))",
+    "description": "Logs stringified JSON property with name."
+  },
+  "Console Time": {
+    "prefix": "ctm",
+    "body": "console.time(`${1:object}`)",
+    "description": "Console time wrapper"
+  },
+  "Console TimeEnd": {
+    "prefix": "cte",
+    "body": "console.timeEnd(`${1:object}`)",
+    "description": "Console time end wrapper"
+  },
+  "Console Warn": {
+    "prefix": "cwa",
+    "body": "console.warn(${1:object})",
+    "description": "Displays a message in the console but also displays a yellow warning icon along with the logged message"
+  },
+  "Console Info": {
+    "prefix": "cin",
+    "body": "console.info(${1:object})",
+    "description": "Displays a message in the console but also displays a blue information icon along with the logged message"
+  }
+}
