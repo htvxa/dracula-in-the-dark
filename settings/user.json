@@ -1,0 +1,35 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 500,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 2,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "indentRainbow.colors": [
+    "rgba(162, 210, 255,0.15)",
+    "rgba(189, 224, 254,0.15)",
+    "rgba(205, 180, 219,0.15)",
+    "rgba(255, 175, 204,0.15)",
+    "rgba(255, 200, 221,0.15)"
+  ],
+  "security.workspace.trust.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vscode_custom_css.imports": ["file:///D:/vscode.css"],
+  "workbench.colorTheme": "Evondev Dracula Darker Contrast",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "vscode-icons",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "explorer.compactFolders": false,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "emmet.triggerExpansionOnTab": true,
+  "git.autofetch": true
+}
